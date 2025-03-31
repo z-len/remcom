@@ -1,0 +1,26 @@
+.services {
+  background: $color-light;
+  padding: 100px 0;
+
+}
+
+.services__inner {
+  @include inner;
+}
+
+.sevices__title {
+  margin-bottom: 70px;
+  @include section-title;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 30px;
+}
+
+.services__item {
+  width: calc(50% - 1/2 * 30px);
+
+}
