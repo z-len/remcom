@@ -1,6 +1,14 @@
 .header {
   background-color: $color-dark;
   padding: 25px 0;
+
+  @media(max-width: $tablet-max) {
+    padding: 27px 0;
+  }
+
+  @media(max-width: $mobile-max) {
+    padding: 3px 0;
+  }
 }
 
 .header__inner {
@@ -19,6 +27,17 @@
   line-height: 100%;
   margin-right: auto;
   color: $color-light;
+  text-decoration: none;
+
+  @media(max-width: $tablet-max) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  @media(max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .phone {
@@ -27,4 +46,19 @@
   font-size: 24px;
   line-height: 100%;
   text-decoration: none;
+
+  @media(max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.burger {
+  display: none;
+  margin-left: 35px;
+  width: 45px;
+  height: 45px;
+
+  @media(max-width: $tablet-max) {
+    display: inline-block;
+  }
 }

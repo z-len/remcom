@@ -5,7 +5,12 @@
   line-height: 33px;
   text-align: center;
   text-decoration: none;
+  border: none;
   border-radius: 5px;
   background-color: $color-orange;
   color: $color-white;
+}
+
+.btn--full {
+  width: 100%;
 }
