@@ -2,6 +2,14 @@
   background: $color-light;
   padding: 100px 0;
 
+  @media(max-width: $tablet-max) {
+    padding: 70px 0 88px;
+  }
+
+  @media(max-width: $mobile-max) {
+    padding: 50px 0;
+
+  }
 }
 
 .services__inner {
@@ -11,6 +19,16 @@
 .sevices__title {
   margin-bottom: 70px;
   @include section-title;
+
+  @media(max-width: $tablet-max) {
+    margin-bottom: 60px;
+  }
+
+  @media(max-width: $mobile-max) {
+    margin-bottom: 50px;
+  }
+
+
 }
 
 .services__list {
@@ -18,9 +36,21 @@
   flex-wrap: wrap;
   row-gap: 50px;
   column-gap: 30px;
+
+  @media(max-width: $tablet-max) {
+    row-gap: 60px;
+  }
+
+  @media(max-width: $mobile-max) {
+   row-gap: 40px;
+  }
 }
 
 .services__item {
   width: calc(50% - 1/2 * 30px);
+
+  @media(max-width: $mobile-max) {
+   width: 100%;
+  }
 
 }

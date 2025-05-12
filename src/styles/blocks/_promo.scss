@@ -34,15 +34,26 @@
       display: none;
     }
   }
- }
+}
 
 
 .promo__title {
   margin-bottom: 70px;
   font-weight: 400;
   font-size: 32px;
-  line-height: 100%;
+  line-height: 44px;
   color: $color-orange;
+
+  @media(max-width: $tablet-max) {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  @media(max-width: $mobile-max) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 
   span {
     display: block;
@@ -50,9 +61,19 @@
     font-family: $font-title;
     font-weight: 300;
     font-size: 116px;
-    line-height: 100%;
-  }
+    line-height: 136px;
 
+    @media(max-width: $tablet-max) {
+      font-size: 64px;
+      line-height: 75px;
+    }
+
+    @media(max-width: $mobile-max) {
+      margin-bottom: 10px;
+      font-size: 54px;
+      line-height: 63px;
+    }
+  }
 }
 
 .promo__visual {
@@ -61,8 +82,10 @@
 
   .btn {
     display: none;
+
     @media(max-width: $mobile-max) {
       display: inline-block;
+      margin-top: 50px;
     }
   }
 
