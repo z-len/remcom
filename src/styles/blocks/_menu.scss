@@ -2,11 +2,34 @@
 
   @media(max-width: $tablet-max) {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px 0;
+    background-color: $color-dark;
+    width: 100%;
+    border-top: 1px solid $color-light;
   }
+
+  @media(max-width: $mobile-max) {
+    text-align: center;
+  }
+
+
 
   ul {
     display: flex;
     gap: 30px;
+
+    @media(max-width: $tablet-max) {
+      justify-content: center;
+    }
+
+    @media(max-width: $mobile-max) {
+      flex-direction: column;
+      align-items: center;
+    }
+
   }
 
   li {
@@ -18,9 +41,9 @@
     font-size: 24px;
     line-height: 100%;
     text-decoration: none;
+
     &.active {
       color: $color-orange;
     }
   }
 }
-

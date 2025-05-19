@@ -56,6 +56,15 @@
   }
 }
 
+.phone--mobile {
+  display: none;
+  @media(max-width: $mobile-max) {
+    display: inline-block;
+    margin: 50px 0 0;
+  }
+
+}
+
 .burger {
   display: none;
   margin-left: 35px;
