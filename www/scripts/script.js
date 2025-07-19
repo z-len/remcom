@@ -1,5 +1,12 @@
 console.log('script work!');
 
+$(document).ready(function(){
+    $('.service-card__title').addClass('wow');
+}
+
+)
+
+
 let burger = document.querySelector('.js-burger');
 let menu = document.querySelector('.js-menu');
 

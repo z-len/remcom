@@ -38,6 +38,10 @@
   font-size: 40px;
   line-height: 100%;
   margin-bottom: 30px;
+
+  &.wow {
+    color: blue;
+  }
 }
 
 .service-card__text {
